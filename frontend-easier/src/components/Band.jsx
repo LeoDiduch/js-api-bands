@@ -6,7 +6,7 @@ export default class Band extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vidId: null
+      vidId: "dQw4w9WgXcQ"
     };
   }
   componentDidMount() {
@@ -18,8 +18,8 @@ export default class Band extends React.Component {
       I let it here 'cause it's a nice bit of code when you want to use 
       Google/Youtube's API
       */
-    const apiKey = "findYourOwn!:p";
-    const query = `${this.props.name} band`;
+    const apiKey = "AIzaSyAYQjF7_hRZGUMoUwlcUezlq33cGFz5SO0";
+    const query = `${this.props.name} music`;
 
     axios
       .get(
@@ -37,9 +37,7 @@ export default class Band extends React.Component {
     return (
       <li>
         <h3>{this.props.name}</h3>
-        {this.state.vidId && (
-          <YouTube videoId={this.state.vidId || "dQw4w9WgXcQ"} />
-        )}
+        <YouTube videoId={this.state.vidId} />
       </li>
     );
   }

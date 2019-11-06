@@ -7,7 +7,7 @@ export default class UserProfile extends React.Component {
     super(props);
     this.state = {
       name: "",
-      favoritesId: []
+      favorites: []
     };
   }
   componentDidMount() {
@@ -24,10 +24,10 @@ export default class UserProfile extends React.Component {
       )
       .then(({ data }) => {
         const favIds = data.map(fav => {
-          return fav.id;
+          return fav.groupId;
         });
         this.setState({
-          favoritesId: favIds
+          favorites: favIds
         });
       });
   }
