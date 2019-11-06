@@ -18,7 +18,7 @@ export default class Band extends React.Component {
       I let it here 'cause it's a nice bit of code when you want to use 
       Google/Youtube's API
       */
-    const apiKey = "AIzaSyAYQjF7_hRZGUMoUwlcUezlq33cGFz5SO0";
+    const apiKey = "findYourOwn!:p";
     const query = `${this.props.name} band`;
 
     axios
