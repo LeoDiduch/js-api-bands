@@ -1,29 +1,14 @@
 {
   "highscores": [
     {
-      "id": 1,
       "playerName": "Loic",
-      "score": 123456
+      "score": 0,
+      "id": 1
     },
     {
-      "id": 2,
       "playerName": "Blandine",
-      "score": 200000
-    },
-    {
-      "id": 3,
-      "playerName": "Matthieu",
-      "score": 35000
-    },
-    {
-      "id": 4,
-      "playerName": "Bastien",
-      "score": 42
-    },
-    {
-      "id": 5,
-      "playerName": "Laurent",
-      "score": 9000000
+      "score": "100",
+      "id": 2
     }
   ]
 }
